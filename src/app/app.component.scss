@@ -1,0 +1,176 @@
+
+header{
+  width: 100%;
+  height: 55px;
+  background:darkblue;
+  color: #fff; 
+  padding: 10px 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container{
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 0px 0px; 
+  padding:30px 20px 30px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #F4F4F4;
+}
+.claim-info-text{
+  font-size: 20px;
+  font-weight: 600;
+}
+.claim-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+}
+.switch-user-box{
+  text-align: right;
+}
+.switch-user{
+  margin-right: 20px;
+}
+.btn-primary{
+  background-color: aqua;  
+  padding: 10px;
+  border-radius: 30px;
+  border:0px;
+  outline: none;
+  color: darkblue;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.claim-number{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: darkblue;
+  max-width: 250px;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.claim-status-details{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  font-size: 14px;
+  column-gap: 40px; 
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.claim-status-division,.claim-status-update{
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #aaa;
+  padding: 20px;
+  column-gap: 20px;  
+}
+.claim-status-update-desscription{
+  font-size: 16px;
+  font-weight: 600;
+}
+.claim-status-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+}
+.claim-status-description span{
+  text-wrap: wrap;
+}
+.claim-status-text{
+  font-weight: bold;
+  margin-right: 20px;
+}
+.claim-status-update-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  line-height: 50px;  
+}
+.claim-status-update-box select{
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #aaa;
+  
+}
+.claim-status-update-text{
+  font-weight: bold;
+  color: red;
+}
+.pl-60{
+  padding: 60;
+}
+.claim-line-info{
+  border: 1px solid #aaa;
+  padding: 20px;
+  margin-bottom:30px
+}
+mat-select{
+  width: 100%;
+  height: 34px;
+  border:1px solid #aaa;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 7px;
+  justify-content: flex-end;
+}
+.claim-line-add{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  margin-bottom: 20px;
+}
+.form-group-control{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+ .mat-mdc-form-field input,
+  .frm-textarea{
+  width: 100%;
+  height:34px;
+  border:1px solid #aaa;
+  padding: 10px;
+}
+.claim-line-text-color{
+  color: red;
+}
+.claim-line-text,.claim-line-text-color{
+  margin-top: 7px;
+}
+.add-new-claim-register{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  
+}
+@media screen and (max-width:768px){ 
+  .switch-user-box{
+    text-align: left;
+  }
+  .claim-status-description > div{
+    display: flex;
+    flex-direction: column;    
+  }
+  .pl-0{
+    padding-left:0;
+  }
+  .claim-status-update-box{
+    gap: 0;
+  }
+  .form-group-control{
+    flex-direction: column;
+    gap: 10px;
+  }
+  ::ng-deep .mdc-text-field{
+    padding: 0px !important;
+  }
+  ::ng-deep .mat-mdc-form-field-infix{
+    min-width: 300px !important;
+  }
+}
